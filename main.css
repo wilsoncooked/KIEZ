@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.background-cont {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #FCF9F9;
+    position: relative;
+}
+
+.background-box {
+    background-color: #FAAFC6;
+    height: 80vh;
+
+    position: relative;
+}
+
+.about {
+    height: 100vh;
+}
+
+.opening-img {
+
+}
+
+.welcome-img {
+    height: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+}
+
+h1 {
+    color: white;
+    font-size: ;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+}
