@@ -1,44 +1,146 @@
-body {
+html {
     padding: 0;
     margin: 0;
+    background-color: #FFF3F1;
 }
 
-.background-cont {
+/* VIEW PORT */
+.viewport {
     height: 100vh;
+    width: 100vw;
+}
+
+/* LIST STYLES */
+.list-decorations {
+    list-style: none;
+}
+
+.list-decorations a {
+    color: #2A1727;
+    
+}
+
+/* FIXED LETTERS */
+.fixed-letters {
+    color: #2A1727;
+    font-size: 2.5em;
+}
+
+/* OPENING PAGE */
+
+.background-cont {
     display: flex;
     align-items: center;
-    background-color: #FCF9F9;
+    background-color: #FFF3F1;
     position: relative;
 }
 
 .background-box {
-    background-color: #FAAFC6;
+    background-color: #FFDB6D;
     height: 80vh;
-
-    position: relative;
+    position: fixed;
 }
 
 .about {
     height: 100vh;
 }
 
-.opening-img {
-
-}
-
 .welcome-img {
-    height: 300px;
     position: absolute;
+    height: 70vh;
     top:50%;
     left:50%;
     transform:translateY(-50%) translateX(-50%);
 }
 
-h1 {
-    color: white;
-    font-size: ;
-    position: absolute;
+.heading {
+     /*   position: absolute;
     top:50%;
-    left:50%;
-    transform:translateY(-50%) translateX(-50%);
+    left:40%;
+    transform:translateY(-50%) translateX(-50%); */
+    color: #2A1727;
+    font-size: 8em;
+    z-index: 3;
+    margin: -10px;
 }
+
+/* ABOUT */
+
+
+
+
+
+
+
+
+
+/* CONTACT - FIXED */
+.contact-grid {
+    background-color: #FFF3F1;
+    display: grid;
+    grid-template-columns: 50px repeat(8, 1fr) 50px;
+    grid-template-rows: 50px repeat(6, 1fr) 50px;
+}
+.back-box {
+    background-color: #FFDB6D;
+    height: 80vh;
+    grid-column: 2 / 10;
+    grid-row: 2 / 8;
+}
+.fixed-letters {
+    z-index: 5;
+}
+.fixed-letter .k {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.fixed-letter .e {
+    grid-column: 9 / 10;
+    grid-row: 8 / 9;
+}
+
+.fixed-letter .z {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#number-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    z-index: 10;
+    position: fixed;
+    left:47%;
+    transform: translateX(-50%);
+    top: 10px
+}
+.contact-form {
+    grid-column: 2 / 10;
+    grid-row: 2 / 8;
+    display: grid;
+}
+
+.entry-data {
+    color: #2A1727;
+    background-color: rgba(255,0,0,0);
+    font-size: 1.2em;
+    text-align: left;
+    outline: none;
+    border: 0;
+    border-bottom: 4px solid #2A1727;
+    padding: 20px 10px 3px 10px;
+    margin: 5px 0px;
+}
+.submit {
+    color: #2A1727;
+    background-color: rgba(255,0,0,0);
+    font-size: 1.2em;
+    text-align: center;
+    width: 150px;
+    border: 0;
+    border-bottom: 4px solid #2A1727;
+    padding: 10px;
+    margin-top: 20px;
+}
+
