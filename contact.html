@@ -14,64 +14,72 @@
     />
   </head>
   <body>
-    <div class="contact-grid">
-      <div class="back-box"></div>
+    <!--FIXED NAVIGATION-->
       <div class="fixed">
-        <h4 class="fixed-letters k">K</h4>
-        <h4 class="fixed-letters e">E</h4>
-        <h4 class="fixed-letters z">Z</h4>
-        <div class="nav-num">
-          <ul id="number-nav" class="list-decorations">
-            <li><a href="#">00</a></li>
-            <li><a href="#">01</a></li>
-            <li><a href="#">02</a></li>
-            <li><a href="#">03</a></li>
-            <li><a href="#">04</a></li>
-          </ul>
+          <h4 class="fixed-letters k">K</h4>
+          <h4 class="fixed-letters e">E</h4>
+          <h4 class="fixed-letters z">Z</h4>
+          <div class="nav-num">
+              <ul id="number-nav" class="list-decorations">
+                <li><a href="index.html">00</a></li>
+                <li><a href="index.html#about-container">01</a></li>
+                <li><a href="blog.html">02</a></li>
+                <li><a href="gallery.html">03</a></li>
+                <li><a href="contact.html">04</a></li>
+            </ul>
+            <div id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="cross"></span>
+            </div>
+          </div>
+                    <!-- TOGGLE PAGE -->
+        <div id="toggle-page">
         </div>
-        <div id="hamburger">
-            <span class="line"></span>
-            <span class="line cross"></span>
-            <span class="line"></span>
-            <span class="cross"></span>
-        </div>
-      </div>
-      <section class="contact-section">
-        <form class="contact-form">
+
+
+
+    <!-- CONTACT FORM -->
+
+        <form class="contact-section viewport contact-form">
+          <div class="back-box"></div>
           <input
-            class="entry-data"
+            class="entry-data first-name"
             type="text"
             placeholder="NAME"
             name="Name"
           />
           <input
-            class="entry-data"
+            class="entry-data last-name"
             type="text"
             placeholder="NAME"
             name="Last"
           />
           <input
-            class="entry-data"
+            class="entry-data phone-number"
             type="text"
             placeholder="NUMBER"
             name="Number"
           />
           <input
-            class="entry-data"
+            class="entry-data email-address"
             type="email"
             placeholder="EMAIL"
             name="Email"
           />
           <input
-            class="entry-data"
+            class="entry-data message-box"
             type="text"
             placeholder="MESSAGE"
             name="Message"
           />
-          <input class="submit" type="submit" value="SEND" />
+          <input class="submit send" type="submit" value="SEND" />
         </form>
       </section>
-    </div>
+    </div>  
+  <!-- SECTION -->
+    <div class="viewport"></div>
     <script src="main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

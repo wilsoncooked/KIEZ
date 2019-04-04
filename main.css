@@ -8,6 +8,7 @@ html {
 .viewport {
     height: 100vh;
     width: 100vw;
+    background-color: #FFF3F1;
 }
 
 /* LIST STYLES */
@@ -15,14 +16,9 @@ html {
     list-style: none;
 }
 
-.list-decorations a {
-    color: #2A1727;
-    
-}
-
 /* FIXED LETTERS */
 .fixed-letters {
-    color: #2A1727;
+    color: #381e34;
     font-size: 2.5em;
 }
 
@@ -41,9 +37,6 @@ html {
     position: fixed;
 }
 
-.about {
-    height: 100vh;
-}
 
 .welcome-img {
     position: absolute;
@@ -54,11 +47,7 @@ html {
 }
 
 .heading {
-     /*   position: absolute;
-    top:50%;
-    left:40%;
-    transform:translateY(-50%) translateX(-50%); */
-    color: #2A1727;
+    color: rgba(36, 7, 30, 0.8);
     font-size: 8em;
     z-index: 3;
     margin: -10px;
@@ -67,60 +56,174 @@ html {
 /* ABOUT */
 
 
-
-
-
-
-
-
+/* GALLERY */
 
 /* CONTACT - FIXED */
-.contact-grid {
+.fixed {
     background-color: #FFF3F1;
-    display: grid;
-    grid-template-columns: 50px repeat(8, 1fr) 50px;
-    grid-template-rows: 50px repeat(6, 1fr) 50px;
 }
-.back-box {
-    background-color: #FFDB6D;
-    height: 80vh;
-    grid-column: 2 / 10;
-    grid-row: 2 / 8;
-}
-.fixed-letters {
-    z-index: 5;
-}
-.fixed-letter .k {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.k {
+    position: fixed;
+    left: 70px;
+    top: 3px;
+    padding: 2px;
 }
 
-.fixed-letter .e {
-    grid-column: 9 / 10;
-    grid-row: 8 / 9;
+.e {
+    position: fixed;
+    bottom: -1px;
+    right: 70px;
 }
 
-.fixed-letter .z {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.z {
+    position: fixed;
+    left: 20px;
+    bottom: 40px;
+    padding: 2px;
 }
 
 #number-nav {
     display: flex;
     justify-content: space-around;
-    width: 40vw;
+    width: 20vw;
     z-index: 10;
     position: fixed;
-    left:47%;
-    transform: translateX(-50%);
+    left:39vw;
+    right: 40vw;
+    /*transform: translateX(-46%);*/
     top: 10px
 }
-.contact-form {
-    grid-column: 2 / 10;
-    grid-row: 2 / 8;
-    display: grid;
+
+#number-nav a {
+    font-size: 0.7em;
+    color: #381e34;
+    padding: 5px;
 }
 
+
+#hamburger {
+    padding: 4px;
+    position: fixed;
+    right: 8px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+
+#hamburger .line {
+    background-color:#381e34;
+    width: 30px;
+    height: 3.5px;
+    margin: 3px 0px;
+}
+.navbar-light .navbar-toggler-icon {
+    background-color: black;
+    height: 4px; 
+    margin: 10px;
+  }
+.p-4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFDB6D;
+
+}
+.p-4 .ul-right {
+    position: absolute;
+    right: 10px;    
+    padding: 10vh 10vw 10vh 0px;
+}
+.p-4 .ul-left {
+    position: absolute;
+    left: 10px;
+    padding: 10vh 0px 10vh 10vw;
+}
+.p-4 li {
+    list-style: none;
+    color: #381e34;
+    font-size: 5em;
+
+}
+.p-4 li a {
+    color: #381e34;
+}
+
+
+#work {
+    background-color: #FFF3F1;
+}
+.navbar-toggler {
+    position: fixed;
+    right: 5px;
+    top: 10px;
+}
+
+/* CARD */
+.card-columns {
+    background-color: #FFF3F1;
+    margin-top: 20vh;
+
+}
+.card {
+    font-size: 0.6em;
+    text-align: justify;
+    background-color: transparent;
+}
+
+.card:hover {
+    
+}
+.card-text {
+    padding: 10px;
+}
+.card-title {
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+}
+/* CONTACT FORM */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 50px repeat(8, 1fr) 50px;
+    grid-template-rows: 50px repeat(8, 1fr) 50px;
+}
+
+.back-box {
+    background-color: #FFDB6D;
+    grid-column: 2 / 10;
+    grid-row: 2 / 10;
+}
+
+.first-name {
+    grid-column: 3 / 6;
+    grid-row: 4 / 5;
+}
+.last-name {
+    grid-column: 6 / 9;
+    grid-row: 4/ 5;
+}
+
+.phone-number {
+    grid-column: 3 / 6;
+    grid-row: 5 / 6;
+}
+
+.email-address {
+    grid-column: 6 / 9;
+    grid-row: 5 / 6;
+}
+
+.message-box {
+    grid-column: 3 / 9;
+    grid-row: 7/ 8;
+}
+
+.send {
+    grid-column: 7 / 9;
+    grid-row: 8 / 9;
+}
 .entry-data {
     color: #2A1727;
     background-color: rgba(255,0,0,0);
@@ -129,18 +232,13 @@ html {
     outline: none;
     border: 0;
     border-bottom: 4px solid #2A1727;
-    padding: 20px 10px 3px 10px;
-    margin: 5px 0px;
 }
 .submit {
     color: #2A1727;
     background-color: rgba(255,0,0,0);
     font-size: 1.2em;
-    text-align: center;
-    width: 150px;
+    text-align: right;
     border: 0;
     border-bottom: 4px solid #2A1727;
-    padding: 10px;
-    margin-top: 20px;
 }
 
