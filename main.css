@@ -26,12 +26,11 @@ html {
     overflow: hidden;
 }
 .header {
-    z-index: 1;
+    z-index: 10;
     font-size: 20em;
     color: rgba(255, 219, 109, 0.5);
     margin: -120px 0px;
 }
-
 
 .welcome-img {
     position: absolute;
@@ -40,6 +39,12 @@ html {
     left:50%;
     transform:translateY(-50%) translateX(-50%);
     box-shadow: 1px 1px 40px rgba(44, 28, 42, 0.3);
+    transition:  ease-in-out 4s;
+    overflow: hidden;
+}
+.welcome-img:hover {
+    height: 100vh;
+    transition:  ease-in-out 4s;
 }
 
 
@@ -87,10 +92,33 @@ html {
     top: 8px
 }
 #number-nav-index a {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #381e34;
-    padding: 5px;
+    padding: 10px;
+    text-align: baseline;
 }
+#number-nav-index a:hover {
+    color: #4A29DB;
+}
+
+.about-statement {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.about-para {
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
+    color: #381e34;
+    overflow: hidden;
+}
+.about-para span {
+    color: #FFF3F1;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+}
+
 /* 
 GALLERY CAROUSEL 
 */
@@ -100,22 +128,21 @@ GALLERY CAROUSEL
     height: 40vh;
     background-color: #FFF3F1;
     overflow: visible;
-    white-space:nowrap;
+    white-space: nowrap;
     position: absolute;
-    top: 20%;
+    top: 21%;
 }
 .slide-box {
     width: 30vw;
     height: 10vh;
+    font-size: 5em;
     text-align: center;
-    color: #381e34;
-    font-size: 3em;
 }
 
 #carousel .slide {
     display: inline-block;
     height: 50vh;
-    padding: 0px 2em;
+    padding: 0px 1em;
 }
 #carousel .slide-h {
     height: 47vh;
@@ -123,6 +150,7 @@ GALLERY CAROUSEL
 #carousel .slide-v {
     height: 60vh;
 }
+
 
 /* 
 FIXED LETTERS 
@@ -165,17 +193,17 @@ FIXED LETTERS
     left:39vw;
     right: 40vw;
     /*transform: translateX(-46%);*/
-    top: 5px
+    top: 10px
 }
 
 #number-nav a {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #381e34;
     padding: 5px;
     align-self: baseline;
 }
 #number-nav a:hover {
-    color: #7F55E8;
+    color: #4A29DB;
 }
 
 .pos-f-t {
@@ -251,6 +279,10 @@ FIXED LETTERS
     font-size: 0.6em;
     text-align: justify;
 }
+.card:hover {
+    transform: scale(1.01);
+    transition: ease-in-out .1s;
+}
 .card-text {
     padding: 10px;
 }
@@ -263,7 +295,13 @@ FIXED LETTERS
     padding: 5px;
 }
 /* CONTACT FORM */
-
+.contact-heading {
+    grid-column: 3 / 6;
+    grid-row: 3 / 4;
+    color: #4A29DB;
+    font-size: 3em;
+    font-weight: 550;
+}
 .contact-section {
     display: grid;
     grid-template-columns: 50px repeat(8, 1fr) 50px;
