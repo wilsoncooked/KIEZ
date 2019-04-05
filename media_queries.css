@@ -1,0 +1,136 @@
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 10em;
+        margin: 0px;
+    }
+    .welcome-img {
+        position: absolute;
+        width: 100vw;
+    }
+    .k-index {
+        left: 30px;
+        top: 3px;
+    }
+    
+    .e-index {
+        bottom: -1px;
+        right: 70px;
+    }
+    
+    .z-index {
+        left: 10px;
+        bottom: 40px;
+    }
+    #number-nav-index {
+        left:40vw;
+        right: 55vw;
+        width: 10vw;
+    }
+    #number-nav-index a {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .about-para {
+        font-size: 1.3em;
+    }
+    .fixed-letters {
+        font-size: 1.8em;
+    }
+    .k {
+        left: 30px;
+        top: 3px;
+    }
+    
+    .e {
+        position: fixed;
+        bottom: -1px;
+        right: 70px;
+        z-index: 10;
+    }
+    
+    .z {
+        left: 10px;
+    }
+    #number-nav a {
+        font-size: 1em;
+        font-weight: bold;
+        color: #381e34;
+    }
+    #number-nav {
+        left: 35vw;
+    }
+    .p-4 li {
+    font-size: 2em;
+    margin: 5vh 0;
+    }
+    .contact-heading {
+        grid-column: 3 / 9;
+        grid-row: 2 / 3;
+        font-size: 2em;
+        font-weight: 550;
+        align-self: end;
+    }
+    
+    .back-box {
+        background-color: #FFDB6D;
+        grid-gap: 20px;
+        grid-column: 2 / 10;
+        grid-row: 2 / 10;
+    }
+    
+    .first-name {
+        grid-column: 3 / 9;
+        grid-row: 3 / 4;
+        align-self: end;
+    }
+    .last-name {
+        grid-column: 3 / 9;
+        grid-row: 4 / 5;
+        align-self: end;
+    }
+    
+    .phone-number {
+        grid-column: 3 / 9;
+        grid-row: 5 / 6;
+        align-self: end;
+    }
+    
+    .email-address {
+        grid-column: 3 / 9;
+        grid-row: 6 / 7;
+        align-self: end;
+    }
+    
+    .message-box {
+        grid-column: 3 / 9;
+        grid-row: 7/ 9;
+        align-self: end;
+    }
+    
+    .send {
+        grid-column: 8 / 9;
+        grid-row: 9 / 10;
+    }
+    .entry-data {
+        color: #4A29DB;
+        background-color: transparent;
+        font-size: 1.3em;
+        text-align: left;
+        outline: none;
+        border: 0;
+        border-bottom: 5px solid #4A29DB;
+        overflow: hidden;
+        margin: 3px 0px;
+    }
+    .submit {
+        font-size: 1.3em;
+        text-align: center;
+        border-bottom: 5px solid #4A29DB;
+        margin: 10px 0 30px 0;
+    }
+    
+    ::placeholder {
+        font-size: 1em;
+
+    }
+}
