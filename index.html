@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>KIEZ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- OPENING SECTION -->
-    <section class="viewport background-cont">
 
-      <div class="container-fluid">
-      <div class="row">
-        <div class="col-4 offset-4 heading">KIEZ</div>
-     </div>
-     <div class="row">
-        <div class="col-4 offset-4 heading">KIEZ</div>
-     </div>
-     <div class="row">
-        <div class="col-4 offset-4 heading">KIEZ</div>
-     </div>
-    </div>
-    <div class="container opening-img">
-        <img class="welcome-img" src="photos/Berlin_Skyline.jpg">
-    </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>KIEZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="tablet.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
 
-        <!-- FIXED NAVIGATION -->
-        <div class="fixed">
-            <h4 class="fixed-letters k">K</h4>
-            <h4 class="fixed-letters e">E</h4>
-            <h4 class="fixed-letters z">Z</h4>
-            <div class="nav-num">
-                <ul id="number-nav" class="list-decorations">
+<body>
+      <!-- HAMBURGER TOGGLE NAIVAGTION -->
+      <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+              <span class="text-muted">
+                <ul class="ul-left">
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="index.html#about-container">ABOUT</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <ul class="ul-right">
                   <li><a href="index.html">00</a></li>
                   <li><a href="index.html#about-container">01</a></li>
                   <li><a href="blog.html">02</a></li>
                   <li><a href="gallery.html">03</a></li>
                   <li><a href="contact.html">04</a></li>
-              </ul>
-              <div id="hamburger">
-                  <span class="line"></span>
-                  <span class="line"></span>
-                  <span class="line"></span>
-                  <span class="cross"></span>
-              </div>
+                </ul>
+              </span>
             </div>
+          </div>
+          <nav class="navbar navbar-light" id="work">
+            <button class="navbar-toggler" style="background-color: transparent;border:none;" type="button" data-toggle="collapse"
+              data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <hr>
+                <hr></span>
+            </button>
+          </nav>
+        </div>
+        <!--  END  -->
+  <!-- OPENING SECTION -->
+
+  <section class="viewport background-cont">
+      <div class="header">KIEZ</div>
+      <div class="header">KIEZ</div>
+      <div class="header">KIEZ</div>
+      <img class="welcome-img" src="photos/Berlin_Skyline.jpg">
+  </section>
+
+  <!-- FIXED NAVIGATION -->
 
 
-        <!-- ABOUT CONTAINER -->
-      <div id="about-container" class="viewport">
 
-      </div>
- 
+    <!-- ABOUT CONTAINER -->
+  
+    <div id="about-container">
+      <div> </div>
+        <h4 class="fixed-letters k-index">K</h4>
+        <h4 class="fixed-letters e-index">E</h4>
+        <h4 class="fixed-letters z-index">Z</h4>
+        <div class="fixed">
+            <div class="nav-num">
+              <ul id="number-nav-index" class="list-decorations">
+                <li><a href="index.html">00</a></li>
+                <li><a href="index.html#about-container">01</a></li>
+                <li><a href="blog.html">02</a></li>
+                <li><a href="gallery.html">03</a></li>
+                <li><a href="contact.html">04</a></li>
+              </ul>
+            </div>
+          </div>
+        <!--<p class="about-para">Kiez is a collection photographs taken here in Berlin by local artists. Together revealing
+          a dynamic and always changing city</p>-->
+    </div>
     <script src="main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
